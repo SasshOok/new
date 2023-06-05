@@ -1,0 +1,56 @@
+01
+abc_sort_open = false;
+02
+data_sort_open = false;
+03
+ 
+04
+function show_data_sort() {
+05
+            if (abc_sort_open) {
+06
+               $(".abc_sort").slideToggle('fast');
+07
+               abc_sort_open = false;
+08
+            }
+09
+             
+10
+            $(".data_sort").slideToggle('fast');
+11
+            if (data_sort_open) {
+12
+                data_sort_open = false;
+13
+                return;
+14
+            }
+15
+            data_sort_open = true;
+16
+}
+17
+function show_abc_sort() {
+18
+           if (data_sort_open) {
+19
+               $(".data_sort").slideToggle('fast');
+20
+               data_sort_open = false;
+21
+           }
+22
+            
+23
+           $(".abc_sort").slideToggle('fast');
+24
+           if (abc_sort_open) {
+25
+               abc_sort_open = false;
+26
+               return;
+27
+           }
+28
+           abc_sort_open = true;
